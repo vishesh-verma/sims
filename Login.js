@@ -12,7 +12,7 @@ mongoose.connect("mongodb://localhost:27017/Sims");
 
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/Login.html");
+    res.sendFile(__dirname + "/login.html");
 });
 
 
