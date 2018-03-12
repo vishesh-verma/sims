@@ -20,7 +20,7 @@ var User = mongoose.model("Patients", nameSchema);
 
 //for sending the html file to the server running on the port 3000
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname + "/registration.html");
 });
 
 //getting the values form post method and action = add_details
