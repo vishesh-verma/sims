@@ -15,6 +15,10 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/login.html");
 });
 
+app.get("/dashboard", (req, res) => {
+    res.sendFile(__dirname + "/dashboard.html");
+});
+
 app.use(session({
   cookieName: 'session',
   secret: 'random_string_goes_here',
